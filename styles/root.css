@@ -1,0 +1,26 @@
+:root {
+  --bg-color: #f0f0f6;
+  --text-dark: rgb(0, 0, 0);
+  --text-light: rgb(255, 255, 255);
+  --text-gray: #767676;
+  --heading-font: "Inter", sans-serif;
+  --body-font: "Inter", sans-serif;
+  --primary-color: #ffb400;
+  --dark-gray: rgb(74, 74, 74);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  font-family: var(--body-font);
+}

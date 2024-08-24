@@ -1,0 +1,58 @@
+.button-primary {
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-col {
+  display: flex;
+  justify-content: center;
+}
+
+.two-col > .left-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.two-col > .right-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  color: var(--text-dark);
+  font-size: 3rem;
+  line-height: 60px;
+  min-height: 160px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 24px;
+}
