@@ -2,7 +2,7 @@
   padding: 0 96px;
   justify-content: space-between;
   background-image: url("../public/Hero.svg");
-  height: 630px;
+  min-height: 630px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -14,12 +14,13 @@
   left: 0;
   width: 100%;
   background-color: white;
-  height: 630px;
+  height: 100%;
   z-index: -1;
 }
 
 .hero-details {
   margin: 125px 0 100px 0;
+  /* margin: 7.8125rem 0 6.25rem 0; */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -30,4 +31,26 @@
   min-height: 120px;
   color: var(--text-gray);
   font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .hero-details {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 32px;
+  }
+  .hero-details {
+    text-align: center;
+    align-items: center;
+  }
 }
