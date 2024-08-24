@@ -2,6 +2,20 @@
   padding: 0 96px;
   justify-content: space-between;
   background-image: url("../public/Hero.svg");
+  height: 630px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 630px;
+  z-index: -1;
 }
 
 .hero-details {
