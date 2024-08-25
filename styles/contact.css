@@ -1,0 +1,70 @@
+.contact {
+  padding-top: 50px;
+}
+
+.contact h2 {
+  padding-bottom: 45px;
+}
+
+.leave-info {
+  flex: 2.3;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 370px;
+}
+
+.contact-details {
+  height: 211px;
+  background-color: #fff;
+  padding: 0 25px 12px;
+}
+
+.contact-details > span {
+  border-radius: 50%;
+  margin: 30px 0 35px 0;
+  background-color: var(--primary-color);
+  height: 40px;
+  width: 40px;
+}
+
+.contact-details > span > img {
+  height: 19px;
+  width: 19px;
+}
+
+form {
+  background-color: #fff;
+  flex: 1;
+  padding: 25px 36px;
+}
+
+form > button {
+  font-weight: 600;
+}
+
+form input {
+  height: 50px;
+  background-color: var(--bg-color);
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: var(--text-dark);
+  font-family: var(--body-font);
+}
+
+.textarea-container {
+  flex: 1;
+}
+
+form textarea {
+  background-color: var(--bg-color);
+  border: none;
+  flex: 1;
+  outline: none;
+  padding: 12px;
+  color: var(--text-dark);
+  font-family: var(--body-font);
+  resize: none;
+}
