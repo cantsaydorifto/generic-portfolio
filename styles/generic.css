@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .two-col {
   display: flex;
   justify-content: center;
@@ -51,10 +56,26 @@ main {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  background-color: inherit;
 }
 
 p {
   line-height: 24px;
+  color: var(--text-gray);
+  font-weight: 400;
+  font-size: 0.9375rem;
+}
+
+section {
+  padding: 0 96px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  section {
+    padding: 0 32px;
+  }
 }
 
 @media (max-width: 768px) {

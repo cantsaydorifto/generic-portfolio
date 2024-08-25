@@ -69,11 +69,17 @@ header {
   }
 }
 
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 38px 32px;
+  }
+}
+
 @media (max-width: 768px) {
   .logo {
     height: 50px;
   }
-  .navbar {
-    padding: 38px 32px;
+  .hamburger-menu {
+    margin-top: -4px;
   }
 }

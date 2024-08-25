@@ -1,10 +1,8 @@
 .hero {
-  padding: 0 96px;
   justify-content: space-between;
   background-image: url("../public/Hero.svg");
   min-height: 630px;
-  max-width: 1440px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .hero::before {
@@ -29,8 +27,6 @@
 .hero-details > p {
   margin: 24px 0 34px 0;
   min-height: 120px;
-  color: var(--text-gray);
-  font-weight: 400;
 }
 
 @media (max-width: 1200px) {
@@ -46,9 +42,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero {
-    padding: 0 32px;
-  }
   .hero-details {
     text-align: center;
     align-items: center;

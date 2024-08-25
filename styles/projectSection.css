@@ -1,0 +1,81 @@
+.project-section {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-section > p {
+  max-width: 654px;
+  margin: 12px 0 45px 0;
+  text-align: center;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 45px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  /* width: 385px; */
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.project-card > img {
+  border-radius: 12px 12px 0px 0px;
+  height: 256px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 16px 16px 20px 16px;
+  gap: 15px;
+  border-radius: 0 0 12px 12px;
+}
+
+.project-title {
+  font-weight: 500;
+}
+
+.project-content > div > p {
+  font-size: 0.875rem;
+  margin-top: 3px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tags > span {
+  padding: 0 14px;
+  border-radius: 50px;
+  width: fit-content;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #efefef;
+  font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+  .project-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+  .project-card {
+    max-width: 450px;
+  }
+}
