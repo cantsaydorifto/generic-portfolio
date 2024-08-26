@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="modal py-36 px-28">
+            <p class="heading-1-half">
+                Add Skill
+            </p>
+            <div class="flex-col gap-16">
+                <label class="modal-label" for="Domain">Domain</label>
+                <input class="border-5" type="text">
+            </div>
+            <div class="flex-col gap-16">
+                <p class="modal-label">Skills</p>
+                <div class="w-full flex gap-20">
+                    <div class="w-full flex-col gap-8">
+                        <p class="heading-4">Skills</p>
+                        <div class="flex-col gap-16">
+                            <input class="border-5" type="text">
+                            <input class="border-5" type="text">
+                            <input class="border-5" type="text">
+                            <input class="border-5" type="text">
+                            <input class="border-5" type="text">
+                        </div>
+                    </div>
+                    <div class="flex-col gap-8 proficiency">
+                        <p class="heading-4">Proficiency (%)</p>
+                        <div class="flex-col gap-16">
+                            <input class="border-5" type="number">
+                            <input class="border-5" type="number">
+                            <input class="border-5" type="number">
+                            <input class="border-5" type="number">
+                            <input class="border-5" type="number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-end gap-24">
+                <button class="button-primary">ADD SKILL</button>
+                <button id="close-modal" class="button-red-outline">CANCEL</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="public/logo.svg" alt="Rayan Adlrdard's Portfolio Site" />
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="active-nav"><a href="#">Skills</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Recommendations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="flex-col align-center py-60">
+            <h2>Skills & Languages</h2>
+            <p class="skill-para pt-24 text-center">Amet Minim Mollit Non Seserunt Ullamco Est Sit Aliqua Dolor Do
+                Amet
+                Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem ipsum</p>
+            <div class="skills-grid w-full grid-3 grid-row-auto gap-44 py-44">
+                <div class="py-36 px-48 bg-white flex-col">
+                    <h4 class="text-dark">Front End Development</h4>
+                    <div class="mt-16 mb-5 w-full flex-between">
+                        <p>Html</p>
+                        <p>90 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>CSS</p>
+                        <p>85 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>Js</p>
+                        <p>80 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>PHP</p>
+                        <p>75 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>WordPress</p>
+                        <p>85 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                </div>
+                <div class="py-36 px-48 bg-white flex-col">
+                    <h4 class="text-dark">Languages</h4>
+                    <div class="mt-16 mb-5 w-full flex-between">
+                        <p>Hindi</p>
+                        <p>90 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>English</p>
+                        <p>85 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                </div>
+                <div class="py-36 px-48 bg-white flex-col">
+                    <h4 class="text-dark">Back End Development</h4>
+                    <div class="mt-16 mb-5 w-full flex-between">
+                        <p>NodeJS</p>
+                        <p>90 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>SSR</p>
+                        <p>85 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                </div>
+                <div class="py-36 px-48 bg-white flex-col">
+                    <h4 class="text-dark">Front End Development</h4>
+                    <div class="mt-16 mb-5 w-full flex-between">
+                        <p>Html</p>
+                        <p>90 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>CSS</p>
+                        <p>85 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>Js</p>
+                        <p>80 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>PHP</p>
+                        <p>75 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>WordPress</p>
+                        <p>85 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                </div>
+                <div class="py-36 px-48 bg-white flex-col">
+                    <h4 class="text-dark">Languages</h4>
+                    <div class="mt-16 mb-5 w-full flex-between">
+                        <p>Hindi</p>
+                        <p>90 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>English</p>
+                        <p>85 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                </div>
+                <div class="py-36 px-48 bg-white flex-col">
+                    <h4 class="text-dark">Back End Development</h4>
+                    <div class="mt-16 mb-5 w-full flex-between">
+                        <p>NodeJS</p>
+                        <p>90 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                    <div class="mt-12 mb-5 w-full flex-between">
+                        <p>SSR</p>
+                        <p>85 %</p>
+                    </div>
+                    <span class="w-full color-bar-container"><span></span></span>
+                </div>
+            </div>
+            <button id="trigger-modal" class="button-primary">ADD SKILL</button>
+        </section>
+    </main>
+    <footer class="flex-col">
+        <div class="img-frame flex-between">
+            <img src="public/Frame-1.png" alt="Frame 1">
+            <img src="public/Frame-2.png" alt="Frame 2">
+            <img src="public/Frame-3.png" alt="Frame 3">
+            <img src="public/Frame-4.png" alt="Frame 4">
+        </div>
+        <div class="single-logo-container">
+            <img class="logo" src="public/logo.svg" alt="">
+        </div>
+        <div class="footer-details flex-between">
+            <div class="ratings flex-col">
+                <div class="rating-icon flex-col">
+                    <img src="public/upwork.png" alt="Upwork">
+                    <span class="flex-center">4.5/5 Rating On Lorem</span>
+                </div>
+                <div class="rating-icon flex-col">
+                    <img src="public/Ipsum.png" alt="Ipsum">
+                    <span class="flex-center">9/10 Rating On Ipsum</span>
+                </div>
+                <div class="rating-icon flex-col">
+                    <img src="public/Dorel.png" alt="Dorel">
+                    <span class="flex-center">4.5/5 Rating On Dorel</span>
+                </div>
+            </div>
+            <div class="flex-between gap-170">
+                <div class="flex-col gap-20">
+                    <p class="footer-links-header">Quick Links</p>
+                    <div class="links flex-col gap-8">
+                        <a href="#">Home</a>
+                        <a href="#">Skills</a>
+                        <a href="#">Education</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Recommendations</a>
+                    </div>
+                </div>
+                <div class="flex-col gap-20">
+                    <p class="footer-links-header">Portfolio</p>
+                    <div class="links flex-col gap-8">
+                        <a href="#">Frontend Developement</a>
+                        <a href="#">Backend Developement</a>
+                        <a href="#">Website Desgin</a>
+                        <a href="#">Machine Learning</a>
+                        <a href="#">Problem Solving & DSA</a>
+                    </div>
+                </div>
+                <div class="links-img-container flex-col gap-20">
+                    <p class="footer-links-header">Connect</p>
+                    <div class="links-img flex-col gap-16">
+                        <a href="#">
+                            <img src="public/LinkedIn.png" alt="LinkedIn">
+                        </a>
+                        <a href="#">
+                            <img src="public/Instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="public/Facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center copyright">&copy; 2024 Copyright, All right reserved</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

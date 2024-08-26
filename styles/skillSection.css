@@ -1,0 +1,30 @@
+.skill-para {
+  max-width: 438px;
+}
+
+.color-bar-container {
+  border-radius: 30px;
+  height: 5px;
+  border: 0.5px solid var(--primary-color);
+}
+
+@media (max-width: 1200px) {
+  .skills-grid {
+    gap: 20px;
+  }
+  .skills-grid > div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

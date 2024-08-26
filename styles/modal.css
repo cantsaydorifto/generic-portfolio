@@ -1,0 +1,56 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.modal {
+  overflow-y: auto;
+  background-color: #fff;
+  max-width: 830px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 10px;
+  animation: opacity 0.2s ease-in-out;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-label {
+  color: var(--text-dark);
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+.modal input {
+  height: 74px;
+  background-color: var(--bg-color);
+  border: none;
+  outline: none;
+  padding: 0 30px;
+  font-size: 1rem;
+  color: var(--text-gray);
+  font-family: var(--body-font);
+}
+
+.proficiency {
+  width: 150px;
+}
