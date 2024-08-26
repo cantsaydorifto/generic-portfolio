@@ -50,3 +50,44 @@ footer {
 .single-logo-container {
   padding-top: 45px;
 }
+
+@media (max-width: 1250px) {
+  .ratings + div {
+    gap: 70px;
+  }
+}
+@media (max-width: 1000px) {
+  footer {
+    padding: 0 32px;
+  }
+  .ratings {
+    display: none;
+  }
+  .ratings + div {
+    justify-content: space-between;
+    flex: 1;
+  }
+}
+
+.img-frame > img {
+  width: 140px;
+  height: 140px;
+}
+
+@media (max-width: 670px) {
+  .links-img-container {
+    display: none;
+  }
+  .img-frame > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .img-frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
