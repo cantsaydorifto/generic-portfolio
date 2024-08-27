@@ -55,3 +55,27 @@ addSkillButton.addEventListener("click", () => {
   skillsGrid.appendChild(newCard);
   modalOverlay.style.display = "none";
 });
+
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const sideNavbar = document.querySelector(".side-menu");
+const overlay = document.querySelector(".overlay-side-menu");
+
+hamburgerMenu.addEventListener("click", () => {
+  sideNavbar.style.display = "flex";
+  overlay.style.display = "block";
+});
+
+overlay.addEventListener("click", () => closeSideMenu());
+
+document
+  .getElementById("close-side-menu")
+  .addEventListener("click", () => closeSideMenu());
+
+function closeSideMenu() {
+  sideNavbar.classList.add("slide-out");
+  setTimeout(() => {
+    sideNavbar.style.display = "none";
+    sideNavbar.classList.remove("slide-out");
+    overlay.style.display = "none";
+  }, 200);
+}

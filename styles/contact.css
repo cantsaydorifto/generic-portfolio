@@ -83,6 +83,12 @@ form textarea {
     flex-direction: row;
     justify-content: space-between;
   }
+  form {
+    padding: 25px 12px;
+  }
+  form textarea {
+    min-height: 150px;
+  }
 }
 
 @media (max-width: 650px) {
