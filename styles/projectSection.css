@@ -1,11 +1,4 @@
-.project-section {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.project-section > p {
+.max-w-654-p {
   max-width: 654px;
   margin: 12px 0 45px 0;
   text-align: center;
