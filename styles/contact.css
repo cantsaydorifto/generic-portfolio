@@ -71,17 +71,27 @@ form textarea {
 @media (max-width: 768px) {
   .contact {
     flex-direction: column-reverse;
+    gap: 50px;
   }
   .contact-info {
     width: 100%;
   }
   .contact-details {
     max-width: 300px;
+    width: 100%;
     flex: 1;
   }
   .low-width-contact-card {
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+  }
+  .contact-info > div {
+    align-items: center;
+  }
+  .contact-info > h2,
+  .leave-info > h2 {
+    text-align: center;
   }
   form {
     padding: 25px 12px;

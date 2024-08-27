@@ -45,7 +45,7 @@ addSkillButton.addEventListener("click", (event) => {
           <p>${input.value}</p>
           <p>${proficiency} %</p>
         </div>
-        <span class="w-full color-bar-container"><span></span></span>
+        <span class="w-full color-bar-container"><span style="width: ${proficiency}%;"></span></span>
       `;
     }
   });
