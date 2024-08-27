@@ -181,17 +181,23 @@ section {
     font-size: 2.5rem;
     min-height: fit-content;
   }
+  h2,
+  .heading-2 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
 }
 
+@media (max-width: 650px) {
+  section {
+    padding: 0 16px;
+  }
+}
 @media (max-width: 500px) {
   h1 {
     font-size: 2rem;
     line-height: 40px;
-  }
-}
-
-@media (max-width: 350px) {
-  p {
-    font-size: 0.875rem;
   }
 }

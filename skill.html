@@ -29,27 +29,27 @@
                     <div class="w-full flex-col gap-8">
                         <p class="heading-4">Skills</p>
                         <div class="flex-col gap-16">
-                            <input class="border-5" type="text">
-                            <input class="border-5" type="text">
-                            <input class="border-5" type="text">
-                            <input class="border-5" type="text">
-                            <input class="border-5" type="text">
+                            <input class="border-5 skill-input" type="text">
+                            <input class="border-5 skill-input" type="text">
+                            <input class="border-5 skill-input" type="text">
+                            <input class="border-5 skill-input" type="text">
+                            <input class="border-5 skill-input" type="text">
                         </div>
                     </div>
                     <div class="flex-col gap-8 proficiency">
                         <p class="heading-4">Proficiency (%)</p>
                         <div class="flex-col gap-16">
-                            <input class="border-5" type="number">
-                            <input class="border-5" type="number">
-                            <input class="border-5" type="number">
-                            <input class="border-5" type="number">
-                            <input class="border-5" type="number">
+                            <input class="border-5 proficiency-input" type="number">
+                            <input class="border-5 proficiency-input" type="number">
+                            <input class="border-5 proficiency-input" type="number">
+                            <input class="border-5 proficiency-input" type="number">
+                            <input class="border-5 proficiency-input" type="number">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex-end gap-24">
-                <button class="button-primary">ADD SKILL</button>
+                <button id="add-skill-btn" class="button-primary">ADD SKILL</button>
                 <button id="close-modal" class="button-red-outline">CANCEL</button>
             </div>
         </form>
@@ -78,7 +78,7 @@
             <p class="skill-para pt-24 text-center">Amet Minim Mollit Non Seserunt Ullamco Est Sit Aliqua Dolor Do
                 Amet
                 Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem ipsum</p>
-            <div class="skills-grid w-full grid-3 grid-row-auto gap-44 py-44">
+            <div id="skills-grid" class="skills-grid w-full grid-3 grid-row-auto gap-44 py-44">
                 <div class="py-36 px-48 bg-white flex-col">
                     <h4 class="text-dark">Front End Development</h4>
                     <div class="mt-16 mb-5 w-full flex-between">
@@ -217,7 +217,7 @@
                 </div>
             </div>
             <div class="flex-between gap-170">
-                <div class="flex-col gap-20">
+                <div class="quick-links flex-col gap-20">
                     <p class="footer-links-header">Quick Links</p>
                     <div class="links flex-col gap-8">
                         <a href="#">Home</a>
@@ -227,7 +227,7 @@
                         <a href="#">Recommendations</a>
                     </div>
                 </div>
-                <div class="flex-col gap-20">
+                <div class="portfolio flex-col gap-20">
                     <p class="footer-links-header">Portfolio</p>
                     <div class="links flex-col gap-8">
                         <a href="#">Frontend Developement</a>
@@ -256,6 +256,7 @@
         <p class="text-center copyright">&copy; 2024 Copyright, All right reserved</p>
     </footer>
     <script src="index.js"></script>
+    <script src="modal.js"></script>
 </body>
 
 </html>

@@ -90,4 +90,16 @@ footer {
     grid-template-columns: 1fr 1fr;
     place-items: center;
   }
+  .portfolio {
+    display: none;
+  }
+  .ratings + div {
+    justify-content: center;
+    text-align: center;
+  }
+  .single-logo-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
 }
