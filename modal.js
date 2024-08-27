@@ -13,14 +13,16 @@ cancelButton.addEventListener("click", (event) => {
   modalOverlay.style.display = "none";
 });
 
-window.addEventListener("click", (event) => {
-  event.preventDefault();
-  if (event.target === modalOverlay) {
-    modalOverlay.style.display = "none";
-  }
+document.querySelector(".modal").addEventListener("click", (event) => {
+  event.stopPropagation();
 });
 
-addSkillButton.addEventListener("click", () => {
+modalOverlay.addEventListener("click", (event) => {
+  modalOverlay.style.display = "none";
+});
+
+addSkillButton.addEventListener("click", (event) => {
+  event.preventDefault();
   const domain = document.getElementById("domain").value;
   const skillInputs = document.querySelectorAll(".skill-input");
   const proficiencyInputs = document.querySelectorAll(".proficiency-input");
